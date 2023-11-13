@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import { motion, AnimatePresence } from "framer-motion";
 
 const HamburgerMenu = ({ isMenuOpen, handleToggleMenu, handleMenuOptions }) => {
