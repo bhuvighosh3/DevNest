@@ -1,5 +1,5 @@
 export default function JsonCode() {
-  return <div className="h-60">
+  return <div className="">
     json2codessss
     </div>;
 }
