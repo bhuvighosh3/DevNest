@@ -1,4 +1,4 @@
-export default function Navbar() {
+export default function Navbar({handleMenuOptions}) {
   return (
     <div className="">
       <div>
@@ -14,22 +14,17 @@ export default function Navbar() {
         </a>
       </div>
       {/* select chatbot */}
- <div>
- <div className="my-2 mx-6 py-4   text-lg  text-slate-900   w-48 md:w-full">
-        <div className="font-bold"> 
-        Current chatbot
+      <div>
+        <div className="my-2 mx-6 py-4   text-lg  text-slate-900   w-48 md:w-full">
+          <div className="font-bold">Current chatbot</div>
+          <select className="p-2  rounded-md border border-gray-300 focus:outline-none focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 w-full">
+            <option value="codewise">CodeWise Bot</option>
+            <option value="comingSoon">Coming Soon</option>
+          </select>
         </div>
-        <select
-          className="p-2  rounded-md border border-gray-300 focus:outline-none focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 w-full"
-        >
-          <option value="codewise">CodeWise Bot</option>
-          <option value="comingSoon">Coming Soon</option>
-        </select>
       </div>
-
- </div>
       {/* conversation */}
-      <div className="my-2 mx-6 p-4 flex  text-xl gap-2 cursor-pointer bg-slate-900 text-white hover:bg-slate-800 rounded-lg hover:text-white w-48 md:w-full">
+      <div className="my-2 mx-6 p-4 flex  text-xl gap-2 cursor-pointer bg-slate-900 text-white hover:bg-slate-800 rounded-lg hover:text-white w-48 md:w-full"   onClick={() => handleMenuOptions('jsonCode')}>
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,10 +41,10 @@ export default function Navbar() {
             />
           </svg>
         </div>
-        <div className="text-lg md:text-xl">Conversation</div>
+        <div className="text-lg md:text-xl">Json to Code</div>
       </div>
       {/* Image2code */}
-      <div className="my-2 mx-6 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white hover:bg-slate-800 rounded-lg hover:text-white w-48 md:w-full">
+      <div className="my-2 mx-6 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white hover:bg-slate-800 rounded-lg hover:text-white w-48 md:w-full" onClick={() => handleMenuOptions('imageCode')}>
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +64,7 @@ export default function Navbar() {
         <div className="text-lg md:text-xl">Image to Code</div>
       </div>
       {/* SQL QUERY GENERATOR */}
-      <div className="my-2 mx-6 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white hover:bg-slate-800 rounded-lg  hover:text-white w-48 md:w-full">
+      <div className="my-2 mx-6 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white hover:bg-slate-800 rounded-lg  hover:text-white w-48 md:w-full" onClick={() => handleMenuOptions('sqlCode')}>
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"

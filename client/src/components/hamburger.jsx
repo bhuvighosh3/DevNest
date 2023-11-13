@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const HamburgerMenu = ({ isMenuOpen, handleToggleMenu }) => {
+const HamburgerMenu = ({ isMenuOpen, handleToggleMenu, handleMenuOptions }) => {
   return (
     <div className="">
       {!isMenuOpen && (
@@ -87,22 +87,23 @@ const HamburgerMenu = ({ isMenuOpen, handleToggleMenu }) => {
                 </a>
               </div>
             </div>
-                  {/* select chatbot */}
- <div>
- <div className="my-2 mx-4 py-4   text-lg  text-slate-900   w-[90%]">
-        <div className="font-bold text-white"> 
-        Current chatbot
-        </div>
-        <select
-          className="p-2  rounded-md border border-gray-300 focus:outline-none focus:border-slate-300 focus:ring focus:ring-slate-400 focus:ring-opacity-50 w-[90%]"
-        >
-          <option value="codewise w-[90%]">CodeWise Bot</option>
-          <option value="comingSoon">Coming Soon</option>
-        </select>
-      </div>
-
- </div>
-            <div className="my-2 mx-4 p-4 flex w-[90%] text-xl gap-2 bg-slate-900  rounded-xl cursor-pointer">
+            {/* select chatbot */}
+            <div>
+              <div className="my-2 mx-4 py-4   text-lg  text-slate-900   w-[90%]">
+                <div className="font-bold text-white">Current chatbot</div>
+                <select className="p-2  rounded-md border border-gray-300 focus:outline-none focus:border-slate-300 focus:ring focus:ring-slate-400 focus:ring-opacity-50 w-[90%]">
+                  <option value="codewise w-[90%]">CodeWise Bot</option>
+                  <option value="comingSoon">Coming Soon</option>
+                </select>
+              </div>
+            </div>
+            <div
+              className="my-2 mx-4 p-4 flex w-[90%] text-xl gap-2 bg-slate-900  rounded-xl cursor-pointer"
+              onClick={() => {
+                handleMenuOptions("jsonCode"); // Update menuOptions state for 'jsonCode'
+                handleToggleMenu(); // Toggle the menu
+              }}
+            >
               {/* Conversation */}
               <div>
                 <svg
@@ -120,11 +121,17 @@ const HamburgerMenu = ({ isMenuOpen, handleToggleMenu }) => {
                   />
                 </svg>
               </div>
-              <div className="text-lg md:text-xl">Conversation</div>
+              <div className="text-lg md:text-xl">Json to Code</div>
             </div>
 
             {/* Image to Code */}
-            <div className="my-2 mx-4 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white  rounded-lg hover:text-white w-[90%]">
+            <div
+              className="my-2 mx-4 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white  rounded-lg hover:text-white w-[90%]"
+              onClick={() => {
+                handleMenuOptions("imageCode"); // Update menuOptions state for 'jsonCode'
+                handleToggleMenu(); // Toggle the menu
+              }}
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +152,13 @@ const HamburgerMenu = ({ isMenuOpen, handleToggleMenu }) => {
             </div>
 
             {/* SQL QUERY GENERATOR */}
-            <div className="my-2 mx-4 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white  rounded-lg  hover:text-white w-[90%]">
+            <div
+              className="my-2 mx-4 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white  rounded-lg  hover:text-white w-[90%]"
+              onClick={() => {
+                handleMenuOptions("sqlCode"); // Update menuOptions state for 'jsonCode'
+                handleToggleMenu(); // Toggle the menu
+              }}
+            >
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
