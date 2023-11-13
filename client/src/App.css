@@ -1,0 +1,12 @@
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*,
+*::before,
+*::after {
+  /* font-family: "Poppins"; */
+  font-family: 'Roboto', sans-serif;
+
+}
