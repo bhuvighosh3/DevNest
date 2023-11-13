@@ -29,7 +29,7 @@ export default function Chat() {
           <Navbar handleMenuOptions={handleMenuOptions} />
         </div>
       </div>
-      <div className="flex sm:hidden">
+      <div className="flex  sm:hidden">
         <Hamburger
           isMenuOpen={isMenuOpen}
           handleToggleMenu={handleToggleMenu}
