@@ -1,3 +1,3 @@
 export default function ImageCode() {
-  return <div className="">image2code</div>;
+  return <div className=" bg-slate-600">image2codess</div>;
 }
