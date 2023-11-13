@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Hamburger from "../components/hamburger";
-import JsonCode from "../components/jsonCode";
+import JsonCode from "../components/JsonCode";
 import ImageCode from "../components/ImageCode";
 import SqlCode from "../components/SqlCode";
 import { useState } from "react";
