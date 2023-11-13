@@ -124,7 +124,7 @@ const HamburgerMenu = ({ isMenuOpen, handleToggleMenu }) => {
             </div>
 
             {/* Image to Code */}
-            <div className="my-2 mx-4 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white hover:bg-slate-800 rounded-lg hover:text-white w-[90%]">
+            <div className="my-2 mx-4 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white  rounded-lg hover:text-white w-[90%]">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +145,7 @@ const HamburgerMenu = ({ isMenuOpen, handleToggleMenu }) => {
             </div>
 
             {/* SQL QUERY GENERATOR */}
-            <div className="my-2 mx-4 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white hover:bg-slate-800 rounded-lg  hover:text-white w-[90%]">
+            <div className="my-2 mx-4 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white  rounded-lg  hover:text-white w-[90%]">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@ const HamburgerMenu = ({ isMenuOpen, handleToggleMenu }) => {
             </div>
 
             {/* Appearance */}
-            <div className="my-2 mx-4 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white hover:bg-slate-800 rounded-lg hover:text-white w-[90%]">
+            <div className="my-2 mx-4 p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white  rounded-lg hover:text-white w-[90%]">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +183,7 @@ const HamburgerMenu = ({ isMenuOpen, handleToggleMenu }) => {
             </div>
 
             {/* Profile */}
-            <div className="my-2 mt-36 mx-4 w-[90%] p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white hover:bg-slate-800 rounded-lg  hover:text-white ">
+            <div className="my-2 mt-36 mx-4 w-[90%] p-4 flex cursor-pointer text-xl gap-2 bg-slate-900 text-white  rounded-lg  hover:text-white ">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
