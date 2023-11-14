@@ -3,12 +3,15 @@ import Hamburger from "../components/hamburger";
 import JsonCode from "../components/JsonCode";
 import ImageCode from "../components/ImageCode";
 import SqlCode from "../components/SqlCode";
+import TextCode from "../components/TextCode";
 import { useState } from "react";
+
 export default function Chat() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [menuOptions, setMenuOptions] = useState({
     jsonCode: true,
     imageCode: false,
+    textCode: false,
     sqlCode: false,
   });
 
@@ -20,6 +23,7 @@ export default function Chat() {
       jsonCode: option === "jsonCode",
       imageCode: option === "imageCode",
       sqlCode: option === "sqlCode",
+      textCode: option === "textCode",
     });
   };
   return (
@@ -42,6 +46,7 @@ export default function Chat() {
           <div>
             {menuOptions.jsonCode && <JsonCode />}
             {menuOptions.imageCode && <ImageCode />}
+            {menuOptions.textCode && <TextCode />}
             {menuOptions.sqlCode && <SqlCode />}
           </div>
         </div>

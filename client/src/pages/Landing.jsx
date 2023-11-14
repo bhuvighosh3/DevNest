@@ -10,7 +10,7 @@ export default function Landing() {
               <img
                 src="https://flowbite.com/docs/images/logo.svg"
                 className="mr-3 h-6 sm:h-9"
-                alt="Flowbite Logo"
+                alt="logo Logo"
               />
               <span className="self-center text-xl font-semibold whitespace-nowrap :text-white">
                 DevNest
@@ -18,13 +18,13 @@ export default function Landing() {
             </a>
             <div className="flex items-center lg:order-2">
               <a
-                href="/chat"
-                className="hidden sm:flex text-gray-800 hover:text-white hover:bg-slate-500 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 :hover:bg-gray-700 focus:outline-none :focus:ring-gray-800"
+  href="mailto:dubeyajitesh07@gmail.com"
+  className="hidden sm:flex text-gray-800 hover:text-white hover:bg-slate-500 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 :hover:bg-gray-700 focus:outline-none :focus:ring-gray-800"
               >
-                Log in
+                Contact us
               </a>
               <a
-                href="/signup"
+                href="/chat"
                 className="text-white bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 :bg-primary-600 :hover:bg-primary-700 focus:outline-none :focus:ring-primary-800"
               >
                 Get started
@@ -49,7 +49,7 @@ export default function Landing() {
               DevNest to streamline their professional journey.
             </p>
             <a
-              href="/signup"
+              href="/chat"
               className="inline-flex justify-center items-center py-3 px-5 mr-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 :focus:ring-primary-900"
             >
               Get started
@@ -67,10 +67,10 @@ export default function Landing() {
               </svg>
             </a>
             <a
-              href="/chat"
-              className="inline-flex justify-center items-center py-3 px-5 text-base font-lg text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 :text-white :border-gray-700 :hover:bg-gray-700 :focus:ring-gray-800"
+  href="mailto:dubeyajitesh07@gmail.com"
+  className="inline-flex justify-center items-center py-3 px-5 text-base font-lg text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 :text-white :border-gray-700 :hover:bg-gray-700 :focus:ring-gray-800"
             >
-              Sign in
+              Contact us
             </a>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
@@ -553,7 +553,7 @@ export default function Landing() {
                 <img
                   src="https://flowbite.com/docs/images/logo.svg"
                   className="mr-3 h-8"
-                  alt="FlowBite Logo"
+                  alt="logo Logo"
                 />
                 <span className="self-center text-2xl font-semibold whitespace-nowrap :text-white">
                   DevNest
