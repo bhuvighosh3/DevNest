@@ -39,7 +39,7 @@ export default function ImageCode() {
       </label>
       {/* when response is generated */}
       <div className="mt-4 text-xl font-bold">Generated Code:</div>
-      <div className="bg-slate-900 p-4 rounded-xl sm:p-8 text-red-400 mt-4 h-60 w-full overflow-y-scroll">
+      <div className="bg-slate-900 p-2 rounded-xl sm:p-2 text-red-400 mt-4 h-60 w-full overflow-y-scroll">
         <div className="">
           <pre>Image</pre>
           <pre>Image</pre>

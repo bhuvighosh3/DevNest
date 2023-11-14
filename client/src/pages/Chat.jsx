@@ -38,7 +38,7 @@ export default function Chat() {
       </div>
       {!isMenuOpen && (
         // <div className="absolute w-screen px-6 py-2 sm:py-6 sm:px-60 md:pl-96">
-        <div className="fixed w-screen py-2 sm:py-6  px-6 sm:pl-72 md:pl-96 sm:pr-6 md:pr-20">
+        <div className="fixed w-screen  py-2 sm:py-6  px-6 sm:pl-72 md:pl-96 sm:pr-6 md:pr-20">
           <div>
             {menuOptions.jsonCode && <JsonCode />}
             {menuOptions.imageCode && <ImageCode />}
