@@ -65,7 +65,7 @@ export default function TextCode() {
           </div>
         </div>
         <textarea
-          className="mx-4 h-16 sm:h-32 w-[90%] sm:w-[92%] md:w-[95%] rounded-lg p-4"
+          className="mx-4 h-32 w-[90%] sm:w-[92%] md:w-[95%] rounded-lg p-4"
           value={textQuery}
           onChange={handleTextareaChange}
         />
