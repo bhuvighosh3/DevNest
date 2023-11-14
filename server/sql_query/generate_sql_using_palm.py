@@ -1,6 +1,8 @@
+import os
 import google.generativeai as genai
+from dotenv import load_dotenv
 
-genai.configure(api_key="AIzaSyD_P7Bhvh2UzCHKzc-NSHQ6M7h_RDRczXc")
+genai.configure(api_key=os.getenv("PALM_API_KEY"))
 
 defaults = {
     'model': 'models/text-bison-001',
