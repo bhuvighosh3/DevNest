@@ -116,7 +116,7 @@ client.on("messageCreate", async (msg) => {
   if (
     msg.content.toLowerCase().startsWith(`${BOT_PREFIX}${DEVNEST_HELP_COMMAND}`)
   ) {
-    msg.reply("On it...");
+    msg.reply("On it,this might take a few seconds...");
 
     const userMessage = msg.content.substring(
       `${BOT_PREFIX}${DEVNEST_HELP_COMMAND}`.length + 1
@@ -125,7 +125,6 @@ client.on("messageCreate", async (msg) => {
     if (response.length > 2000) {
         msg.reply("Maybe try summarizing the question? The response is too long to send in a single message.");
       } else {
-        console.log("response is", response);
         msg.reply(response);
       }
   }
