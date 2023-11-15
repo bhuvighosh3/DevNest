@@ -1,23 +1,62 @@
 import { useState } from "react";
+
 export default function JsonCode() {
   const [jsonFile, setJsonFile] = useState(null);
+  const [generatedCode, setGeneratedCode] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [copied, setCopied] = useState(false);
 
-  const handleJsonFileUpload = (event) => {
-    const file = event.target.files[0];
+  const handleJsonFileUpload = async (event) => {
+    try {
+      const file = event.target.files[0];
+      console.log("Selected file:", file);
+      setJsonFile(file);
+      setGeneratedCode(""); 
+      setLoading(true); 
 
-    // Do something with the file if needed
-    console.log("Selected file:", file);
+      const formData = new FormData();
+      formData.append("file", file);
 
-    // Set the file to state
-    setJsonFile(file);
+      const response = await fetch("http://localhost:5000/api/v1/code_generation/using_json", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to generate code");
+      }
+
+      const generatedCode = await response.text();
+      setGeneratedCode(generatedCode);
+    } catch (error) {
+      console.error("Error generating code:", error);
+    } finally {
+      setLoading(false); 
+    }
   };
+
+  const handleCopyCode = () => {
+    const textarea = document.createElement("textarea");
+    textarea.value = generatedCode;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+
+  };
+
   return (
     <>
       <label
         htmlFor="fileInput"
-        className="h-72 sm:h-80  border-dashed border-2 border-gray-500 flex w-full justify-center text-center items-center bg-slate-200 cursor-pointer"
+        className="h-72 sm:h-80 border-dashed border-2 border-gray-500 flex flex-col items-center justify-center bg-slate-200 cursor-pointer"
       >
-        <div>
+        <div className="mb-4">
           <div className="w-full flex justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,9 +72,9 @@ export default function JsonCode() {
             </svg>
           </div>
           <p className="text-bold text-2xl md:text-3xl px-4">
-            Drag and drop or click here
+            {jsonFile ? `Selected File: ${jsonFile.name}` : "Drag and drop or click here"}
           </p>
-          <p className="px-4">to upload your json file of component</p>
+          <p className="px-4">to upload your JSON file of component</p>
         </div>
         <input
           type="file"
@@ -45,23 +84,33 @@ export default function JsonCode() {
           onChange={handleJsonFileUpload}
         />
       </label>
+      {/* Display spinner while loading */}
+      {loading && (
+        <div className="text-center mt-4">
+          <div className="spinner-border text-slate-800" role="status">
+            <span className="visually-hidden">Generating Code...</span>
+          </div>
+        </div>
+      )}
       {/* when response is generated */}
-      <div className="mt-4 text-xl font-bold">Generated Code:</div>
-      <div className="bg-slate-900 p-2 rounded-xl sm:p-2 text-red-400 mt-4 h-60 w-full overflow-y-scroll">
+      <div className={`mt-4 text-xl font-bold ${loading ? 'hidden' : ''}`}>
+        Generated Code:
+      </div>
+      <div className={`bg-slate-900 p-2 rounded-xl sm:p-2 text-red-400 mt-4 h-60 w-full overflow-y-scroll ${loading ? 'hidden' : ''}`}>
         <div className="">
-          <pre>JSON</pre>
-          <pre>JSON</pre>
-          <pre>JSON</pre>
-          <pre>JSON</pre>
-          <pre>JSON</pre>
-          <pre>JSON</pre>
-          <pre>JSON</pre>
-          <pre>JSON</pre>
-          <pre>JSON</pre>
-          <pre>JSON</pre>
-          <pre>JSON</pre>
+          <pre>{generatedCode}</pre>
         </div>
       </div>
+      {!loading && generatedCode && (
+        <div
+          className={`mx-4 mt-4 text-white py-2 font-bold text-xl rounded-xl w-[50%] sm:w-[92%] md:w-[95%] text-center ${
+            copied ? "bg-slate-500" : "bg-slate-900"
+          } cursor-pointer hover:bg-slate-800`}
+          onClick={handleCopyCode}
+        >
+          {copied ? "Copied!" : "Copy Code"}
+        </div>
+      )}
     </>
   );
 }
