@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = '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'
+openai.api_key = 'openai_key'
 
 def generate_code_from_caption(caption):
     prompt = f"Generate the code for the described React functional component. It should have React & CSS code too. Name the CSS file & import it. Do not include the image in the code {caption}"
