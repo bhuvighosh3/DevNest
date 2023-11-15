@@ -1,13 +1,15 @@
 from flask import Flask, jsonify, request
 from query_generation.generate_sql_using_palm import generate_sql
-from code_generation.generate_code_from_text import generate_code_from_text
 from helpers import get_prompt, load_json_data
+from flask_cors import CORS
+
+from code_generation.generate_code_from_text import generate_code_from_text
 from code_generation.generate_code_from_json import generate_code_from_json
 from image_to_code.code_generation import generate_code_from_caption
 from image_to_code.image_captioning import generate_image_caption
 
 app = Flask(__name__)
-
+cors = CORS(app, resources={r"/api/*": {"origins": "http://localhost:5173"}})
 UPLOAD_FOLDER = 'static/uploads'
 
 @app.route('/api/v1/')
@@ -80,6 +82,7 @@ def generate_code_from_image():
 
     except Exception as e:
         return jsonify({"error":str(e)})
+
 
 if __name__ == '__main__':
     app.run(debug=True)
