@@ -80,6 +80,8 @@ Detailed instructions can be found in the [Documentation](#) (Link to be added).
 
 ## Presentation
 
-We welcome contributions! Check out our Presentation: [https://app.pitch.com/app/presentation/62765732-ca57-427d-8003-322c8a3b54be/8a976c54-dcd8-4c83-9d7a-8a967d8cd331/37d59f01-873c-46ac-93f1-dd76609662f0] for more details.
+We welcome contributions! Check out our Presentation for more details.: 
+[DevNest.pdf](https://github.com/Ajitesh72/DevNest/files/13381083/DevNest.pdf)
+
 
 **Happy Coding with Devnest! 🚀**
