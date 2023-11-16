@@ -78,7 +78,7 @@ To get started with Devnest, follow these steps:
 
 Detailed instructions can be found in the [Documentation](#) (Link to be added).
 
-## presentation
+## Presentation
 
 We welcome contributions! Check out our Presentation: [https://app.pitch.com/app/presentation/62765732-ca57-427d-8003-322c8a3b54be/8a976c54-dcd8-4c83-9d7a-8a967d8cd331/37d59f01-873c-46ac-93f1-dd76609662f0] for more details.
 
