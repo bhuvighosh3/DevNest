@@ -12,7 +12,7 @@
 - [Cost-Effective Solutions](#cost-effective-solutions)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
+- [Presentation](#presentation)
 
 ## Video Demonstration
 
@@ -78,8 +78,10 @@ To get started with Devnest, follow these steps:
 
 Detailed instructions can be found in the [Documentation](#) (Link to be added).
 
-## Contributing
+## Presentation
 
-We welcome contributions! Whether it's bug reports, feature requests, or code contributions, feel free to open an issue or submit a pull request. Check out our [Contributing Guidelines](CONTRIBUTING.md)[comming soon😊] for more details.
+We welcome contributions! Check out our Presentation for more details.: 
+[DevNest.pdf](https://github.com/Ajitesh72/DevNest/files/13381083/DevNest.pdf)
+
 
 **Happy Coding with Devnest! 🚀**
