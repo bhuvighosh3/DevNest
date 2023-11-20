@@ -81,7 +81,7 @@ Detailed instructions can be found in the [Documentation](https://docs.google.co
 ## Presentation
 
 We welcome contributions! Check out our Presentation for more details.: 
-[DevNest.pdf](https://github.com/Ajitesh72/DevNest/files/13381083/DevNest.pdf)
+[DevNest.pdf](https://github.com/Ajitesh72/DevNest/files/13415432/DevNest.pdf)
 
 
 **Happy Coding with Devnest! 🚀**
