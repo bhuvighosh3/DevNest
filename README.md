@@ -42,7 +42,7 @@ Devnest believes in providing powerful tools without breaking the bank. Our mode
 
 ## Tech Stack
 
-- **Frontend**: React, Tailwind CSS
+- **Frontend**: React, Tailwind CSS, Framer-Motion
 - **Backend**: Flask
 - **Discord Bot**: Discord.js
 - **Models & APIs**: Llama-7b,Palm 2, Custom models (Chat-Bison-001)
