@@ -29,7 +29,7 @@ https://github.com/Ajitesh72/DevNest/assets/95878363/4b275dd7-80cd-4304-8dd9-c54
 
 
 
-youtube link -https://www.youtube.com/watch?v=anrZWqtSyac,https://youtu.be/2n8x51gOu6g
+youtube link -https://www.youtube.com/watch?v=anrZWqtSyac   ,    https://youtu.be/2n8x51gOu6g
 
 ## Features
 
