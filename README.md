@@ -76,7 +76,7 @@ To get started with Devnest, follow these steps:
 3. Set up API keys for GPT Vision, T5, and other services.
 4. Run the application locally.
 
-Detailed instructions can be found in the [Documentation](#) (Link to be added).
+Detailed instructions can be found in the [Documentation](https://docs.google.com/document/d/1jBicGpcdRuSIJ7GCv7VOrtiyg1GZOXH8wNsUJRnhEiA/edit?usp=sharing) .
 
 ## Presentation
 
