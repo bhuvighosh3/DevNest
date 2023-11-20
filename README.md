@@ -41,6 +41,7 @@ youtube link -https://www.youtube.com/watch?v=anrZWqtSyac   ,    https://youtu.b
 ## Discord Bot
 
 The Devnest Discord bot adds a fun twist to coding communities. Moderators can use it for events like Hacktoberfest, allowing coders to ask questions and receive both informative and sarcastic responses.
+To use our discord bot in your own server-simply click on - https://discord.com/api/oauth2/authorize?client_id=1173997968341352519&permissions=3072&scope=bot
 
 ## Cost-Effective Solutions
 
