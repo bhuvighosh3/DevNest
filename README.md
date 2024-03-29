@@ -1,5 +1,5 @@
 <a href="[https://your-devnest-app-url/](https://your-devnest-app-url/)">
-    <h1>Devnest - Your Developer's Ultimate Tool 🚀</h1>
+    <h1>Devnest - Developer's Ultimate Tool 🚀</h1>
 </a>
     
 ![CodeCrafter 2nd_page-0001](https://github.com/Ajitesh72/DevNest/assets/95878363/3672a855-b07a-42e4-87cb-4ca00e3f18e4)
