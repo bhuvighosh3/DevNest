@@ -26,7 +26,7 @@ https://github.com/Ajitesh72/DevNest/assets/95878363/cea70786-3c59-4184-a42d-cf2
 
 
 
-<h1>chatbot</h1>
+<h1>Chatbot</h1>
 
 https://github.com/Ajitesh72/DevNest/assets/95878363/4b275dd7-80cd-4304-8dd9-c5487fb3d9e3
 
@@ -56,7 +56,7 @@ Devnest believes in providing powerful tools without breaking the bank. Our mode
 - **Frontend**: React, Tailwind CSS, Framer-Motion
 - **Backend**: Flask
 - **Discord Bot**: Discord.js
-- **Models & APIs**: Llama-7b, OpenAI api, Custom models (Chat-Bison-001)
+- **Models & APIs**: Llama-7b, OpenAI API, Custom models (Chat-Bison-001)
 - **Hosting**: Vercel
 
 ## Why Devnest Over Others?
