@@ -38,7 +38,7 @@ youtube link -https://www.youtube.com/watch?v=anrZWqtSyac   ,    https://youtu.b
 ## Features
 
 - **JSON to Code**: Convert JSON UI specifications to React components.
-- **Image to Code**: Generate code from UI images using our image to code feature,leveraged by vision transformers and a custom-trained Palm 2 API.
+- **Image to Code**: Generate code from UI images using our image to code feature,leveraged by vision transformers and a custom-trained OpenAI API.
 - **Text to Code (Discord Bot)**: Engage with a Discord bot for code generation, trained on the sarcastic Chat-Bison-001 model.
 - **SQL Queries Generator**: Utilize Llama-7b to generate SQL queries based on prompts and your table schema.
 
@@ -56,7 +56,7 @@ Devnest believes in providing powerful tools without breaking the bank. Our mode
 - **Frontend**: React, Tailwind CSS, Framer-Motion
 - **Backend**: Flask
 - **Discord Bot**: Discord.js
-- **Models & APIs**: Llama-7b,Palm 2, Custom models (Chat-Bison-001)
+- **Models & APIs**: Llama-7b, OpenAI api, Custom models (Chat-Bison-001)
 - **Hosting**: Vercel
 
 ## Why Devnest Over Others?
